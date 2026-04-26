@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  font-family: Arial;
+}
+
+/* Container for moving text */
+.container {
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  text-align: center;
+  animation: moveUp 25s linear forwards;
+}
+
+/* Big readable text */
+.text {
+  font-size: 8vw; /* responsive big size */
+  color: white;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* Glow effect for first word */
+.glow {
+  color: pink;
+  text-shadow: 0 0 10px red, 0 0 20px pink, 0 0 40px red;
+}
+
+/* Animation */
+@keyframes moveUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="text glow">SAKOON?</div>
+  <div class="text">
+    PA MA DERA GRANA YE,<br>
+    ZA STA SARA WADA KAWAM ❤️
+  </div>
+</div>
+
+</body>
+</html>
